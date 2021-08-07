@@ -1,8 +1,8 @@
-# Office dataset
+# Office Dataset
 
 This **Office** dataset contains the raw images of Office-31 [[1](#reference)] and 10-class subset of Caltech-256 [[2](#reference)], where the 10 classes are the overlapped classes between Office-31 and Caltech-256. The data in this repo is adapted from the [[data source](http://www.stat.ucla.edu/~jxie/iFRAME/code/imageClassification.rar)], by renaming the 10 folder names (i.e. class names) of Caltech domain to be consistent with the folder names of the other three domains of Office-31.
 
-## How to Reference
+## How to reference
 
 Please cite the following works and give credits to the original contributors when using the dataset: [1] for Office-31, [2] for Caltech-256, and [3] for Office-Caltech-10.
 
