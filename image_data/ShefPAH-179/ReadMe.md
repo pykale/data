@@ -1,6 +1,6 @@
 # ShefPAH179 Dataset
 
-A dataset of cardiac MR images (short-axis) for Pulmonary Arterial Hypertension (PAH) diagnosis. This dataset consists of the CMR images acquired from 179 subjects, which is a subset of the 220 subjects in [[1](#reference)]. The images have been resized to (64x64) and shared in DICOM format. The files are organized in the following structure:
+This ShefPAH179 dataset is a cardiac magnetic resonance imaging (CMR) dataset for Pulmonary Arterial Hypertension (PAH) diagnosis provided by the University of Sheffield. ShefPAH179 consists of the short-axis (SA) CMR images acquired from 179 subjects, which is a selected subset of the 220 subjects in [[1](#reference)]. The images have been resized to 64x64 and shared in DICOM format for demonstration and small-scale experiments. The files are organized in the following structure:
 
 ```sh
 └───SA_64x64
@@ -19,7 +19,7 @@ A dataset of cardiac MR images (short-axis) for Pulmonary Arterial Hypertension 
     ├───landmarks_64x64.csv
 ```
 
-The *landmarks_64x64.csv* file contains information of subject IDs (column 1 'Subject'), locations of the three landmarks (columns 2 - 7), and medical diagnosis results (column 8 'Group'). We use the values in column 'Group' as labels for training and prediction, where "`0`" denotes health control (no PAH), "`1`" denotes idiopathic PAH (iPAH), and "`2`" denotes PAH.
+The *landmarks_64x64.csv* file contains information of subject IDs (column 1 'Subject'), locations of the three landmarks (columns 2 - 7), and medical diagnosis results (column 8 'Group'). We use the values in column 'Group' as labels for training and prediction, where "`0`" denotes health control (no PH), "`1`" denotes idiopathic PAH (IPAH), and "`2`" denotes PAH.
 
 |   Subject |   inf insertion point X |   inf insertion point Y |   sup insertion point X |   sup insertion point Y |   RV inf X |   RV inf Y |   Group |
 |----------:|------------------------:|------------------------:|------------------------:|------------------------:|-----------:|-----------:|--------:|
@@ -31,7 +31,7 @@ The *landmarks_64x64.csv* file contains information of subject IDs (column 1 'Su
 
 ## How to Reference this Dataset
 
-We would appreciate it if you cite our works when using the dataset:
+We would appreciate it if you cite our work [[1](#reference)] below when using the dataset:
 
 ### Reference
 
