@@ -1,6 +1,6 @@
-# ShefPAH179 Dataset
+# The ShefPAH-179 Dataset
 
-This ShefPAH179 dataset is a cardiac magnetic resonance imaging (CMR) dataset for Pulmonary Arterial Hypertension (PAH) diagnosis provided by the University of Sheffield. ShefPAH179 consists of the short-axis (SA) CMR images acquired from 179 subjects, which is a selected subset of the 220 subjects in [[1](#reference)]. The images have been resized to 64x64 and shared in DICOM format for demonstration and small-scale experiments. The files are organized in the following structure:
+The ShefPAH-179 dataset is a cardiac magnetic resonance imaging (MRI) dataset for Pulmonary Arterial Hypertension (PAH) diagnosis provided by the University of Sheffield. ShefPAH179 consists of 3580 short-axis (SA) cardiac MRI images acquired from 179 subjects (20 each), which is a subset of the 220 subjects in [[1](#reference)]. The 512x512 images in [[1](#reference)] have been resized to 64x64 and shared in DICOM format for demonstration and small-scale experiments. The files are organized in the following structure:
 
 ```sh
 └───SA_64x64
@@ -19,7 +19,7 @@ This ShefPAH179 dataset is a cardiac magnetic resonance imaging (CMR) dataset fo
     ├───landmarks_64x64.csv
 ```
 
-The *landmarks_64x64.csv* file contains information of subject IDs (column 1 'Subject'), locations of the three landmarks (columns 2 - 7), and medical diagnosis results (column 8 'Group'). We use the values in column 'Group' as labels for training and prediction, where "`0`" denotes health control (no PH), "`1`" denotes idiopathic PAH (IPAH), and "`2`" denotes PAH.
+The *landmarks_64x64.csv* file contains information of subject IDs (column 1 'Subject'), locations of the three landmarks (columns 2 - 7, for registration), and medical diagnosis ground truth (column 8 'Group'). We use the values in column 'Group' as class labels for training and prediction, where "`0`" denotes health control (no PH), "`1`" denotes idiopathic PAH (IPAH), and "`2`" denotes PAH.
 
 |   Subject |   inf insertion point X |   inf insertion point Y |   sup insertion point X |   sup insertion point Y |   RV inf X |   RV inf Y |   Group |
 |----------:|------------------------:|------------------------:|------------------------:|------------------------:|-----------:|-----------:|--------:|
@@ -29,9 +29,9 @@ The *landmarks_64x64.csv* file contains information of subject IDs (column 1 'Su
 |         4 |                   34.25 |                   38    |                   34.25 |                   21.25 |      23    |      41    |       0 |
 |         5 |                   33    |                   40.25 |                   31.5  |                   24.25 |      19.5  |      40.5  |       2 |
 
-## How to Reference this Dataset
+## How to reference this dataset
 
-We would appreciate it if you cite our work [[1](#reference)] below when using the dataset:
+We would appreciate it if you cite our work [[1](#reference)] below when using this dataset:
 
 ### Reference
 
