@@ -19,30 +19,30 @@ The files are organized in the following structure:
 └───Uncertainty_tuples
     ├───PHD-NET
     │   ├───4CH
-    │   │   ├───uncertainty_pairs_pairs_test_l0.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l0.csv
+    │   │   ├───uncertainty_pairs_test_l0.csv
+    │   │   ├───uncertainty_pairs_valid_l0.csv
     ...
-    │   │   ├───uncertainty_pairs_pairs_test_l2.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l2.csv
+    │   │   ├───uncertainty_pairs_test_l2.csv
+    │   │   ├───uncertainty_pairs_valid_l2.csv
     │   ├───SA
-    |   │   ├───uncertainty_pairs_pairs_test_l0.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l0.csv
+    |   │   ├───uncertainty_pairs_test_l0.csv
+    │   │   ├───uncertainty_pairs_valid_l0.csv
     ...
-    |   |   |───uncertainty_pairs_pairs_test_l2.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l2.csv
+    |   |   |───uncertainty_pairs_test_l2.csv
+    │   │   ├───uncertainty_pairs_valid_l2.csv
     ├───U-Net
     │   ├───4CH
-    │   │   ├───uncertainty_pairs_pairs_test_l0.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l0.csv
+    │   │   ├───uncertainty_pairs_test_l0.csv
+    │   │   ├───uncertainty_pairs_valid_l0.csv
     ...
-    │   │   ├───uncertainty_pairs_pairs_test_l2.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l2.csv
+    │   │   ├───uncertainty_pairs_test_l2.csv
+    │   │   ├───uncertainty_pairs_valid_l2.csv
     │   ├───SA
-    |   │   ├───uncertainty_pairs_pairs_test_l0.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l0.csv
+    |   │   ├───uncertainty_pairs_test_l0.csv
+    │   │   ├───uncertainty_pairs_valid_l0.csv
     ...
-    |   |   |───uncertainty_pairs_pairs_test_l2.csv
-    │   │   ├───uncertainty_pairs_pairs_valid_l2.csv
+    |   |   |───uncertainty_pairs_test_l2.csv
+    │   │   ├───uncertainty_pairs_valid_l2.csv
 ```
 
 Each *.csv* file contains information of subject IDs (column 1 'uid'), and three column pairs of 'Error' and 'Uncertainty' for each uncertainty measure: 'E-CPV', 'E-MHA' and 'S-MHA' (columns 2 - 7). Column 8 'Validation Fold' shows which fold this subject was used for validation, and Column 9 'Test Fold' shows the fold this subject was used for test.
