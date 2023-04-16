@@ -61,8 +61,8 @@ Each file follows the structure below:
 
 ## How to reference this dataset
 
-We would appreciate it if you cite our work [[1](placeholder)] below when using this dataset:
+We would appreciate it if you cite our work [1] below when using this dataset:
 
 ### Reference
 
-[1]Placeholder
+[1] L. A. Schobs, A. J. Swift and H. Lu, "Uncertainty Estimation for Heatmap-Based Landmark Localization," in IEEE Transactions on Medical Imaging, vol. 42, no. 4, pp. 1021-1034, April 2023, doi: 10.1109/TMI.2022.3222730.
