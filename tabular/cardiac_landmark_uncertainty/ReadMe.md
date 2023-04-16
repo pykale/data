@@ -43,6 +43,13 @@ The files are organized in the following structure:
     ...
     |   |   |───uncertainty_pairs_test_l2.csv
     │   │   ├───uncertainty_pairs_valid_l2.csv
+        ├───PHD-NET-NO-GT
+    │   ├───4CH
+    │   │   ├───uncertainty_pairs_test_l0.csv
+    │   │   ├───uncertainty_pairs_valid_l0.csv
+    ...
+    │   │   ├───uncertainty_pairs_test_l2.csv
+    │   │   ├───uncertainty_pairs_valid_l2.csv
 ```
 
 Each *.csv* file contains information of subject IDs (column 1 'uid'), and three column pairs of 'Error' and 'Uncertainty' for each uncertainty measure: 'E-CPV', 'E-MHA' and 'S-MHA' (columns 2 - 7). Column 8 'Validation Fold' shows which fold this subject was used for validation, and Column 9 'Test Fold' shows the fold this subject was used for test.
@@ -50,6 +57,8 @@ Each *.csv* file contains information of subject IDs (column 1 'uid'), and three
 The *'.csv* files with *'valid'* in the suffix contain the predictions from the model trained at the fold 'Validation Fold', and the results will be used for fitting *Quantile Binning* (think of this as the training data). The *'.csv* files with *'test'* in the suffix contain the predictions from the model trained at the fold 'Test Fold', and the results will be used at test time for evaluation for that fold. Note, for each fold the remaining subjects not in 'Validation Fold' or 'Test Fold' were used to train the landmark localization model.
 
 We have three pairs of *'valid'* and *'test'* files - a pair for each of the three landmarks. The landmark is indicated by *l0*, *l1* or *l2* in the suffix of the filename.
+
+The PHD-NET-NO-GT is to show an example where you do not have the testing ground truth localization error but wish to bin the predictions by uncertainty (real world scenario).
 
 Each file follows the structure below:
 
