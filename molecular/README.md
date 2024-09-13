@@ -7,6 +7,7 @@ We have three datasets in this collection:
 - BindingDB
 - BioSNAP
 - Human
+
 where BindingDB and BioSNAP are split into random and cluster splits, while Human is split into cold and random splits. The full dataset is also provided for each dataset.
 
 The files are organized in the following structure:
