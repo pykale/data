@@ -10,7 +10,7 @@ To ensure relevance for semiconductor behaviour, we applied the following filter
 After filtering, 61,570 entries remained.  
 
 More details on how the dataset is constructed can be found in the paper:  
-`Benchmarking Band Gap Prediction For Semiconductor Materials Using Multimodal And Multi-fidelity Data<https://openreview.net/pdf?id=u8FripvaG5>`.  
+[Benchmarking Band Gap Prediction For Semiconductor Materials Using Multimodal And Multi-fidelity Data](https://openreview.net/pdf?id=u8FripvaG5).  
 
 ## Contents  
 The provided zip file includes two types of files:  
