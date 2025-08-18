@@ -1,7 +1,7 @@
 This dataset contains a collection of publicly available materials structure data, adapted for use with the [PyKale](https://github.com/pykale/pykale) library.  
 
 ## Source  
-The dataset is collected from the [Materials Project](https://materialsproject.org/)[1], which provides both 3D crystal structures and PBE band gap values.  
+The dataset is collected from the [Materials Project](https://materialsproject.org/) [1], which provides both 3D crystal structures and PBE band gap values.  
 
 To ensure relevance for semiconductor behaviour, we applied the following filters:  
 - Removed entries with chemical formulas containing more than 8 elements.  
@@ -26,7 +26,7 @@ The provided zip file includes two types of files:
      - Electron affinity  
      - Block  
      - Atomic volume  
-   - This feature set follows the design in CGCNN[2].  
+   - This feature set follows the design in CGCNN [2].  
 
 2. **`.cif` files**  
    - Contain the 3D crystal structure information for all 61,570 entries.  
