@@ -17,9 +17,12 @@ More details on how the dataset is constructed can be found in the paper:
 [Benchmarking Band Gap Prediction For Semiconductor Materials Using Multimodal And Multi-fidelity Data](https://openreview.net/pdf?id=u8FripvaG5).  
 
 ## Contents  
-The provided zip file includes two types of files:  
+`cif_file.zip` includes two types of files:  
 
-1. **`atom_init.json`**  
+1. **`.cif` files**  
+   - Contain the 3D crystal structure information for all 61,570 entries. 
+
+2. **`atom_init.json`**  
    - Defines a one-hot encoding scheme over nine atomic features:  
      - Group number  
      - Period number  
@@ -31,9 +34,6 @@ The provided zip file includes two types of files:
      - Block  
      - Atomic volume  
    - This feature set follows the design in CGCNN [3].  
-
-2. **`.cif` files**  
-   - Contain the 3D crystal structure information for all 61,570 entries.  
 
 The band gap value files are organized as:
 
